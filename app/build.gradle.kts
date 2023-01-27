@@ -52,6 +52,7 @@ dependencies {
     implementation(Compose.ui)
     implementation(Compose.uiToolingPreview)
     implementation(Compose.material)
+    implementation(Compose.navigation)
 
     implementation(project(Modules.core))
     implementation(project(Modules.coreUi))

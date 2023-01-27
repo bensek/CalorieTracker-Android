@@ -11,6 +11,9 @@ object Compose {
     private const val activityComposeVersion = "1.3.1"
     const val activityCompose = "androidx.activity:activity-compose:$activityComposeVersion"
 
+    private const val navVersion = "2.5.3"
+    const val navigation = "androidx.navigation:navigation-compose:$navVersion"
+
     // Testing Dependencies
     const val junitUiTest = "androidx.compose.ui:ui-test-junit4:$composeVersion"
     const val uiToolingDebug = "androidx.compose.ui:ui-tooling:$composeVersion"
