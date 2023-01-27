@@ -33,6 +33,9 @@ android {
 }
 
 dependencies {
+    implementation Koin.core
+    implementation Koin.android
+    implementation Koin.compose
 
     testImplementation Testing.junit4
     testImplementation Testing.junitAndroidExt

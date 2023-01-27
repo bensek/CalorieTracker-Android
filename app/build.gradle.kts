@@ -53,7 +53,9 @@ dependencies {
     implementation(Compose.uiToolingPreview)
     implementation(Compose.material)
     implementation(Compose.navigation)
-
+    implementation(Koin.core)
+    implementation(Koin.android)
+    implementation(Koin.compose)
     implementation(project(Modules.core))
     implementation(project(Modules.coreUi))
     implementation(project(Modules.onboardingPresentation))
