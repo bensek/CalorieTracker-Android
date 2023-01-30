@@ -56,6 +56,7 @@ dependencies {
     implementation(Koin.core)
     implementation(Koin.android)
     implementation(Koin.compose)
+    implementation(Koin.navigation)
     implementation(project(Modules.core))
     implementation(project(Modules.coreUi))
     implementation(project(Modules.onboardingPresentation))

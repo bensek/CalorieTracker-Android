@@ -49,8 +49,10 @@ dependencies {
 //    implementation Compose.viewModelCompose
     implementation Compose.activityCompose
 
-//    kapt DaggerHilt.hiltCompiler
-//    implementation DaggerHilt.hiltAndroid
+    implementation(Koin.core)
+    implementation(Koin.android)
+    implementation(Koin.compose)
+    implementation(Koin.navigation)
 
     testImplementation Testing.junit4
     testImplementation Testing.junitAndroidExt

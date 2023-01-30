@@ -9,5 +9,7 @@ object Koin {
 
     const val compose = "io.insert-koin:koin-androidx-compose:$composeVersion"
 
+    const val navigation = "io.insert-koin:koin-androidx-navigation:$androidVersion"
+
 
 }
