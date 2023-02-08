@@ -24,11 +24,6 @@ val defaultMeals = listOf(
         mealType = MealType.Breakfast
     ),
     Meal(
-        name = UiText.StringResource(com.amalitech.core.R.string.breakfast),
-        drawableRes = com.amalitech.core.R.drawable.ic_breakfast,
-        mealType = MealType.Breakfast
-    ),
-    Meal(
         name = UiText.StringResource(com.amalitech.core.R.string.lunch),
         drawableRes = com.amalitech.core.R.drawable.ic_lunch,
         mealType = MealType.Lunch

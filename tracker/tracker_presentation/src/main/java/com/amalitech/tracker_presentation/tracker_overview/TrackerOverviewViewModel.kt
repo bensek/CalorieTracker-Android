@@ -43,7 +43,7 @@ class TrackerOverviewViewModel(
                             route = Route.SEARCH
                                     + "/${event.meal.mealType.name}"
                                     + "/${state.date.dayOfMonth}"
-                                    + "/${state.date.month}"
+                                    + "/${state.date.monthValue}"
                                     + "/${state.date.year}"
                         )
                     )
