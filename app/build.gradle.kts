@@ -1,6 +1,9 @@
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+
 }
 
 android {
@@ -57,6 +60,7 @@ dependencies {
     implementation(Koin.android)
     implementation(Koin.compose)
     implementation(Koin.navigation)
+
     implementation(project(Modules.core))
     implementation(project(Modules.coreUi))
     implementation(project(Modules.onboardingPresentation))
@@ -64,6 +68,15 @@ dependencies {
     implementation(project(Modules.trackerPresentation))
     implementation(project(Modules.trackerDomain))
     implementation(project(Modules.trackerData))
+
+    implementation(Retrofit.okHttp)
+    implementation(Retrofit.retrofit)
+    implementation(Retrofit.okHttpLoggingInterceptor)
+    implementation(Retrofit.moshiConverter)
+
+    kapt(Room.roomCompiler)
+    implementation(Room.roomKtx)
+    implementation(Room.roomRuntime)
 
     testImplementation(Testing.junit4)
     androidTestImplementation(Testing.junitAndroidExt)

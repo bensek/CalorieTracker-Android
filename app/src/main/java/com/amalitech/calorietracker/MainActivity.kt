@@ -22,6 +22,7 @@ import com.amalitech.onboarding_presentation.height.HeightScreen
 import com.amalitech.onboarding_presentation.nutrient_goal.NutrientGoalScreen
 import com.amalitech.onboarding_presentation.weight.WeightScreen
 import com.amalitech.onboarding_presentation.welcome.WelcomeScreen
+import com.amalitech.tracker_presentation.tracker_overview.TrackerOverviewScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,7 +73,9 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(Route.TRACKER_OVERVIEW) {
-
+                            TrackerOverviewScreen(
+                                onNavigate = navController::navigate
+                            )
                         }
                     }
                 }
