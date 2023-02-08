@@ -69,6 +69,8 @@ dependencies {
     implementation(project(Modules.trackerDomain))
     implementation(project(Modules.trackerData))
 
+    implementation(Coil.coilCompose)
+
     implementation(Retrofit.okHttp)
     implementation(Retrofit.retrofit)
     implementation(Retrofit.okHttpLoggingInterceptor)
