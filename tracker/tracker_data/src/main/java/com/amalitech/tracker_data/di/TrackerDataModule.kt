@@ -37,13 +37,13 @@ object TrackerDataModule {
                 .create()
         }
 
-        // database
-        single<TrackerDatabase> {
+        // Tracker Dao
+        single<TrackerDao> {
             Room.databaseBuilder(
                 androidApplication(),
                 TrackerDatabase::class.java,
                 "tracker_db"
-            ).build()
+            ).build().dao
         }
 
         // repository

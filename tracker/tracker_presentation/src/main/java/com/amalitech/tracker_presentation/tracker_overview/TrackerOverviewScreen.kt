@@ -9,7 +9,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import com.amalitech.core.util.UiEvent
 import com.amalitech.core_ui.LocalSpacing
-import com.amalitech.tracker_presentation.R
 import com.amalitech.tracker_presentation.tracker_overview.components.*
 import org.koin.androidx.compose.koinViewModel
 

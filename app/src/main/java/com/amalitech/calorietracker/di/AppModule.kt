@@ -12,6 +12,7 @@ import com.amalitech.onboarding_presentation.goal.GoalViewModel
 import com.amalitech.onboarding_presentation.height.HeightViewModel
 import com.amalitech.onboarding_presentation.nutrient_goal.NutrientGoalViewModel
 import com.amalitech.onboarding_presentation.weight.WeightViewModel
+import com.amalitech.tracker_presentation.tracker_overview.TrackerOverviewViewModel
 import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -32,4 +33,5 @@ val appModule = module {
     viewModel { ActivityViewModel(get()) }
     viewModel { GoalViewModel(get()) }
     viewModel { NutrientGoalViewModel(get(), get(), get()) }
+    viewModel { TrackerOverviewViewModel(get(), get()) }
 }
